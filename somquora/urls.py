@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'', include('mama_cas.urls')),
     url(r'^accounts/login/$', login, name='login'),
     url(r'^accounts/logout/$', logout, name='logout'),
+    url(r'', include('frontpage.urls')),
 ]
