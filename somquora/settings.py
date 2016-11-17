@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mama_cas',
     'cas',
+    'frontpage',
 
 ]
 
