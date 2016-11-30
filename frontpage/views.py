@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def home(request):
     return render(request, 'frontpage/home.html', {})
+
+def answer(request):
+    return render(request, 'frontpage/answer.html', {})
