@@ -131,7 +131,8 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 CAS_SERVER_URL = "https://secure.its.yale.edu/cas/login"
-
+CAS_LOGOUT_COMPLETELY = True
+CAS_PROVIDE_URL_TO_LOGOUT = True
 
 MAMA_CAS_SERVICES = [
     {
