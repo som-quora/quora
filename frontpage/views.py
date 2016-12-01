@@ -24,7 +24,7 @@ def askquestion(request):
             post.author = request.user
             post.question_date = timezone.now()
             post.save()
-            return HttpResponseRedirect('/thanks/')
+            return HttpResponseRedirect('/question/%s' % post.id)
 
     # if a GET (or any other method) we'll create a blank form
     else:
@@ -58,5 +58,5 @@ def postanswer(request, qid):
 
 def question(request, qid):
     question = Question.objects.get(id=qid)
-    answers = Answer.objects.filter(question=1)
+    answers = Answer.objects.filter(question__id=qid)
     return render(request, 'frontpage/question.html', {'question': question, 'answers':answers})
