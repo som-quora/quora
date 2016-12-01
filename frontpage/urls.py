@@ -8,4 +8,7 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.home, name='home'),
+    url(r'^question/$', views.askquestion, name='askquestion'),
+    url(r'^postanswer/(?P<qid>\d+)/$', views.postanswer, name='postanswer'),
+    url(r'^question/(?P<qid>\d+)/$', views.question, name='question'),
 ]

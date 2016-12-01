@@ -16,12 +16,14 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls import include
-from cas.views import login, logout
+#from cas.views import login, logout
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'', include('mama_cas.urls')),
-    url(r'^accounts/login/$', login, name='login'),
-    url(r'^accounts/logout/$', logout, name='logout'),
+#    url(r'', include('mama_cas.urls')),
+#    url(r'^accounts/login/$', login, name='login'),
+#    url(r'^accounts/logout/$', logout, name='logout'),
     url(r'', include('frontpage.urls')),
+    url(r'^accounts/', include('registration.backends.simple.urls')),
 ]

@@ -6,4 +6,12 @@
 {% else %}
     <li><a href='/accounts/login/'>Login</a></li>
 {% endif %}
+
+<ul>
+{% for question in questions %}
+    <a href="question/{{ question.id }}"><li>{{ question }}</a> <br>
+<a href="postanswer/{{ question.id }}">Post Answer</a>
+    </li>
+{% endfor %}
+</ul>
 {% endblock content %}
