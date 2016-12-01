@@ -3,13 +3,14 @@ from forms import AskQuestion, PostAnswer
 from django.http import HttpResponseRedirect
 from django.utils import timezone
 from .models import Question, Answer
-
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 def home(request):
 	questions = Question.objects.all()
 	return render(request, 'frontpage/home.html', {'questions': questions})
 
+@login_required
 def askquestion(request):
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
@@ -32,6 +33,7 @@ def askquestion(request):
 
     return render(request, 'frontpage/createquestion.html', {'form': form})
 
+@login_required
 def postanswer(request, qid):
     question = Question.objects.get(id=qid)
     # if this is a POST request we need to process the form data
