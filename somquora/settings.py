@@ -25,7 +25,7 @@ SECRET_KEY = '0-81!+g!joqkkzv@o&5!adp6s*0#7cqdk+c$fy@ab1n$(g^owr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [u'somquora.pythonanywhere.com', u'127.0.0.1']
 
 
 # Application definition
@@ -131,3 +131,18 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 CAS_SERVER_URL = "https://secure.its.yale.edu/cas/login"
+
+
+MAMA_CAS_SERVICES = [
+    {
+        'SERVICE': '^https?://secure\.its\.yale\.edu/cas/login',
+        'LOGOUT_ALLOW': True,
+        'LOGOUT_URL': 'https://www.example.com/logout',
+        'PROXY_ALLOW': True,
+        'PROXY_PATTERN': '^https://proxy\.example\.com',
+    }
+]
+
+MAMA_CAS_VALID_SERVICES = (
+    '^https?://secure\.its\.yale\.edu/cas/login',
+)
