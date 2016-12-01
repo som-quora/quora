@@ -11,7 +11,7 @@ class Question(models.Model):
 	question = models.TextField()
 	question_date = models.DateTimeField(blank=True, null=True)
 
-	def __str__(self):
+	def __unicode__(self):
 		return self.question
 
 class Answer(models.Model):
@@ -21,5 +21,5 @@ class Answer(models.Model):
 	content = models.TextField()
 	answer_date = models.DateTimeField(blank=True, null=True)
 	
-	def __str__(self):
-		return self.question
+	def __unicode__(self):
+		return str(self.author)

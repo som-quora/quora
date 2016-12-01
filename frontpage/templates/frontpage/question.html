@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<p>
+{{ question }}
+</p>
+
+<ul>
+{% for answer in answers %}
+    <li>{{ answer.content }} <br>
+    </li>
+{% endfor %}
+</ul>
+
+{% endblock content %}
