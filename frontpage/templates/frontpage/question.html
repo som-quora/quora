@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<p>
+{{ question }}
+</p>
+
+<a href="/postanswer/{{ question.id }}">Post an answer</a>
+
+<ul>
+{% for answer in answers %}
+    <li>{{ answer.content }} by {{ answer.author }}
+    </li>
+{% endfor %}
+</ul>
+
+{% endblock content %}
