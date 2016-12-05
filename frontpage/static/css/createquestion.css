@@ -8,6 +8,7 @@ textarea{
 	border: 2px solid red;
 	border-radius: 4px;
 	width: 100%;
+	background-color: #F0F8FF;
 }
 
 label{
