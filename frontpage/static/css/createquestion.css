@@ -12,13 +12,15 @@ textarea{
 
 label{
 	width: 100%;
+	font-size: 18px;
 }
 
 input{
-	width: 75px;
+	width: 100px;
 	background-color: #eee;
 }
 
 body{
 	background-image: url("questions.jpg");
+	background-repeat: no-repeat;
 }
