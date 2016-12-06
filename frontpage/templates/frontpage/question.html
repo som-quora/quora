@@ -3,15 +3,16 @@
 
 {% block content %}
 
-<p>
-Question:  {{ question }}
+<p><strong>
+{{ question }}
+</strong>
 </p>
 
 <a href="/postanswer/{{ question.id }}">Post a new answer</a>
 
 <ul>
 {% for answer in answers %}
-    <li>{{ answer.content }} by {{ answer.author }}
+    <li>{{ answer.content }} </br> <p1>- {{ answer.author }}</p1>
     </li>
 {% endfor %}
 </ul>
