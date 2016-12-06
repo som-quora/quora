@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
-
+{% load staticfiles %}
 
 {% block content %}
 
 <p>
-{{ question }}
+Question:  {{ question }}
 </p>
 
-<a href="/postanswer/{{ question.id }}">Post an answer</a>
+<a href="/postanswer/{{ question.id }}">Post a new answer</a>
 
 <ul>
 {% for answer in answers %}
@@ -15,5 +15,6 @@
     </li>
 {% endfor %}
 </ul>
+<link rel="stylesheet" href="{% static 'css/question.css' %}">
 
 {% endblock content %}

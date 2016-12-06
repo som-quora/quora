@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load staticfiles %}
 {% block content %}
 {% if user.is_authenticated %}
     <li><a href="/accounts/logout/">Logout</a></li>
@@ -9,9 +9,10 @@
 
 <ul>
 {% for question in questions %}
-    <a href="question/{{ question.id }}"><li>{{ question }}</a> <br>
-<a href="postanswer/{{ question.id }}">Post Answer</a>
-    </li>
+    <h4><a href="question/{{ question.id }}"><li>{{ question }}</a> <br>
+<a href="postanswer/{{ question.id }}"><h5>Post Answer</h5></a>
+    </li></h4>
 {% endfor %}
 </ul>
+<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
 {% endblock content %}
