@@ -2,15 +2,17 @@
 {% load staticfiles %}
 {% block content %}
 {% if user.is_authenticated %}
-    <li><a href="/accounts/logout/">Logout</a></li>
+    
 {% else %}
     <li><a href='/accounts/login/'>Login</a></li>
 {% endif %}
 
+<h3>The following is a list of questions posted by your colleagues. Click on the question to see the answers posted. To ask a new question click <a href="question">here</a>.</h3>
+
 <ul>
 {% for question in questions %}
-    <h4><a href="question/{{ question.id }}"><li>{{ question }}</a> <br>
-<a href="postanswer/{{ question.id }}"><h5>Post Answer</h5></a>
+    <h4><a href="question/{{ question.id }}"><li class="a">{{ question }}</a>
+    <a href="postanswer/{{ question.id }}"><h5>Answer this question</h5></a>
     </li></h4>
 {% endfor %}
 </ul>

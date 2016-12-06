@@ -1,43 +1,27 @@
-form{
-	width: 90%;
-	margin-left:30px;
-	margin-top: 20px;
-}
-
-textarea{
-	border: 2px solid red;
-	border-radius: 4px;
-	width: 100%;
-	background-color: #F0F8FF;
-}
-
-label{
-	width: 100%;
-	font-size: 18px;
-}
-
 p{
 	margin-left: 30px;
-	margin-top: 50px;
+	margin-top: 20px;
 	font-size: 20px;
 	font-style: bold;
 }
 
-body{
-
-	background-color: #ed796f;
+ul{
+	margin-top: 10px;
+	font-size: 18px;
 }
 
-li{
-	margin-left: 150px;
-	margin-top: 0px;
-	font-size: 20px;
-}
 
 a{
-	margin-left: 50px;
-	margin-top: 20px;
-	font-size: 20px;
+	margin-left: 30px;
+	font-size: 18px;
 }
 
+body{
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+}
 
+p1{
+	color: blue;
+	font-size: 16px;
+}
