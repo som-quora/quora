@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+
+    <title>Final Report - Dark-Snow</title>
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <link href="grid.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+  
+     <div class="container">
+
+      <div class="jumbotron">
+        <h1>Final Report - Dark-Snow</h1>
+    
+        <p>Created: Dec 1st, Last Edited: Dec 5th</p>
+        
+      
+<hr class="my-2">
+   <div align="right" >
+      <ul style="list-style-type:none">
+  <li>Anudeep Yegireddi <a href="mailto:Anudeep.yegireddi@yale.edu" target="top">Anudeep.yegireddi@yale.edu</a></li>
+  <li>Siddharth Jain <a href="mailto:siddharthsunil.jain@yale.edu" target="_blank">siddharthsunil.jain@yale.edu</a></li>
+  <li>Gene Sussman <a href="mailto:gene.sussman@yale.edu" target="_blank">gene.sussman@yale.edu</a></li>
+  <li>Daisy Cao <a href="mailto:daisy.Cao@yale.edu" target="_blank">daisy.Cao@yale.edu</a></li>
+     </ul>
+     </div>
+    
+      </div>
+<br><br>
+      <h3>Links:</h3>
+      
+      <div class="row">
+        
+        <a href="https://github.com/som-quora/quora" target="_blank"><img src="github.png" alt="Github Repository" height="68" width="184"></img>  </a>
+        <a href="http://somquora.pythonanywhere.com/accounts/login/?next=/question/" target="_blank"><img src="pythonanywhere.png" alt="pythonanywhere" width="184">*</img> </a>
+        <p><I>*We are using pythoneverywhere to host the site, no Heroku link can be provided here</I></p>
+      </div>
+
+<br><br>
+      <h3>Burn Down Chart</h3>
+      <img src="weekly.png" alt="weekly" height="280" >
+      <img src="daily.png" alt="daily" height="280" >
+      
+      
+<br><br>
+      <h3>Completed Stories</h3>
+      <p>When connecting all the pages, the CAS login did not work again. To make sure the system is running, we then added back the classical authentication. We experienced more difficulties than we thought because of the unique environment, it is even more complex as we have two Mac users and two windows users. It also bring us problems because of python syntax and spending lots of time on debugging.</p>
+
+      <p>
+          <div class="row" >
+            <div class="col-md-6"><strong>User Stories</strong></div>
+            <div class="col-md-2"><strong>Story points</strong></div>
+            <div class="col-md-6">As a user, I can sign up to the SOM-quora system</div>
+            <div class="col-md-2">6</div>
+            <div class="col-md-6">As a user, the system allow me to sign in the next time</div>
+            <div class="col-md-2">2</div>
+            <div class="col-md-6">As a users, I can see the most recent posts in the home page</div>
+            <div class="col-md-2">6</div>
+            <div class="col-md-6">As a user, I can post new questions</div>
+            <div class="col-md-2">4</div>
+            <div class="col-md-6">As a user, I can answer new questions</div>
+            <div class="col-md-2">4</div>
+          </div>
+      </p>
+      
+<br><br>  
+         <h3>Final Sprint Summary</h3>
+         <p>When connecting all the pages, the CAS login did not work again on Django. To make sure the system is running, we then added back the classical authentication. We experienced more difficulties than we thought because of the environment, it is even more complex as we have two Mac users and two windows users. The python syntax details also brought difficulties, and we spent lots of time on debugging.</p>
+         <p>On Tuesday, we realized we need to add back the classical authentication, so the story points increased. We also have some problems with Django, so most of the time we are back and forth debugging errors.</p>
+         <p>On Wednesday afternoon, we booked a room and worked together to deal with the Django template inheritance and the details. Finally, with hours of work, we got the overall “skeleton” templates running. </p>
+<br><br>
+
+         <h3>Product Backlog</h3>
+         <p>We wanted to create a version of Quora for Yale SOM that SOM students can submit questions and others in the community can answer them. The essential functions were completed.</p>
+         <p>However, some features were not completed successfully because of technical barriers and stretch goals were not finished because of time limitation. </p>
+         <p>We wanted to use authentication via CAS and already spent lots of time on it, but then we finally realized it does not work well on Django.  </p>
+         <p>We wanted to have more details to the forum system but did not expect the difficulties on the environment set-up and debugging. </p>
+         <p>We wanted to have points system as a stretch goal to gamify the SOM Quora. We once planned to design a comprehensive algorithm to optimize the posts order by tagging, upvote/downvote and referral data and host a backend data analysis system. We wanted to have optional Facebook integration once we have the basic authentication. We also designed an innovation to bring the online community to offline networking by Evans Hall coffee sharing. </p>
+         <p>One learning for this is using unfamiliar coding language might bring more difficulties than expected and bring frustration either. We should plan buffer time for a new framework. But we did learn a lot of Python and Django.</p>
+
+
+         <p>
+          <div class="row" >
+            <div class="col-md-6"><strong>User Stories(Stretch Goal）</strong></div>
+            <div class="col-md-2"><strong>Story points</strong></div>
+            <div class="col-md-6">As a user, I can tagging in SOM-quora system</div>
+            <div class="col-md-2">6</div>
+            <div class="col-md-6">As a user, I will receive points with valuable answers</div>
+            <div class="col-md-2">6</div>
+            <div class="col-md-6">As a users, I can integrate my Facebook</div>
+            <div class="col-md-2">4</div>
+            <div class="col-md-6">As a user, I can buy a coffee for the answer helped me</div>
+            <div class="col-md-2">6</div>
+            <div class="col-md-6">As the admin in Evans Hall coffee, I check who deserves the coffee that already paid by others</div>
+            <div class="col-md-2">8<br></br></div>
+          </div>
+      </p>
+<br><br>
+
+         <h3>Reflection</h3>
+         <p>We spent too much time discussing the scope of the project and stretch goals; we should start coding earlier.</p>
+         <p>We planned to use several tools at first, such as Eclipse/Jira/MongoDB/Postgres and spent too much time on learning the tools.</p>
+         <p>We did not expect to spend too much time on the environment set-up and synchronization between Mac and Windows users.</p>
+         <p>We did not use user stories but split them into technical pieces, then they were not comprehensive enough as we expected, especially most of the time we worked remotely. User stories are better way to organize the tasks.</p>
+         <p>It is hard to get all pages work together and most of the time we are debugging than writing the codes.</p>
+         <p>During the past 6 weeks, we’ve learnt how to use the popular tools: python, Django, CAS integration(we tried), Github, HTML/CSS, and also the software management, the scrum management, the real difficulties we may experience in a product development project. </p>
+<br><br>
+
+      <div align=center>
+      <img src="Anu1.png" alt="Anudeep" width="100">
+      <img src="sidd1.png" alt="Siddharth" width="100">
+      <img src="gene1.png" alt="Gene" width="100">
+      <img src="daisy1.jpg" alt="Daisy" width="100">
+      </div> 
+
+      <img src="darksnow.jpg" alt="DarkSnow" width=100%>
+    </div> <!-- /container -->
+
+
+  </body>
+</html>

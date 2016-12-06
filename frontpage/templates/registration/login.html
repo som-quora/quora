@@ -1,7 +1,30 @@
 {% extends "base.html" %}
 {% load i18n %}
-
+{% load staticfiles %}
 {% block content %}
+
+<!DOCTYPE html>
+<!-- saved from url=(0082)file:///C:/Users/daisy/OneDrive/Documents/Signin%20Template%20for%20Bootstrap.html -->
+<html lang="en" class="gr__getbootstrap_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Quora-SOM Signin</title>
+    <link href="{% static 'css/bootstrap.min.css' %}"
+                      rel="stylesheet">
+    <link href="{% static 'css/signin.css' %}"
+                      rel="stylesheet">
+
+
+<body vertical-align:middle background= background-size: cover> 
+
+<div style="color:#FFFFFF" align="center" >
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<div ></div>
+<div vertical-align="middle">
 <form method="post" action=".">
   {% csrf_token %} 
   {{ form.as_p }}
@@ -10,6 +33,13 @@
   <input type="hidden" name="next" value="{{ next }}" />
 </form>
 
+
 <p>{% trans "Forgot password" %}? <a href="{% url 'auth_password_reset' %}">{% trans "Reset it" %}</a>!</p>
 <p>{% trans "Not member" %}? <a href="{% url 'registration_register' %}">{% trans "Register" %}</a>!</p>
+
+</div>
+<div></div>
+</body>
+
 {% endblock %}
+</html>
