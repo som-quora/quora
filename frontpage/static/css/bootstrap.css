@@ -1319,6 +1319,9 @@ mark,
 .text-center {
   text-align: center;
 }
+.text-viewable {
+  padding-left: 30px;
+}
 .text-justify {
   text-align: justify;
 }
