@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 
 {% block content %}
 <form method="post">
@@ -6,4 +7,5 @@
     {{ form }}
     <input type="submit" value="Submit" />
 </form>
+<link rel="stylesheet" href="{% static 'css/createquestion.css' %}">
 {% endblock content %}
