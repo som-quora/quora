@@ -147,3 +147,6 @@ MAMA_CAS_SERVICES = [
 MAMA_CAS_VALID_SERVICES = (
     '^https?://secure\.its\.yale\.edu/cas/login',
 )
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
